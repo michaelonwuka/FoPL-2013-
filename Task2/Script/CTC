@@ -1,0 +1,5 @@
+echo "Now beginning test"
+echo "Test number: "
+./compilation
+./comparison
+echo "Test complete"

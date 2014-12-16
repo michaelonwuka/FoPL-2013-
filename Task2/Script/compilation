@@ -1,0 +1,18 @@
+cd ~/Source
+pwd
+echo "Hi, $USER"!
+echo "Compilation script commencing"
+g++ Source_Correct_Cpp.cpp -o Correct_Cpp
+echo "Compiled first c++ program"
+./Correct_Cpp
+g++ Source_Incorrect_Cpp.cpp -o Incorrect_Cpp
+echo "Compiled second c++ program"
+./Incorrect_Cpp
+echo "Initiating first python program"
+python $(echo "Source_Correct_Py.py")
+echo "Initiating second python program"
+python Source_Incorrect_Py.py
+echo "Compilation complete"
+mv *.txt ~/TestFiles
+
+

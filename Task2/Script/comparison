@@ -1,0 +1,14 @@
+cd ~/TestFiles
+echo "Comparing C++ programs"
+comm -12 Correct_cpp.txt Incorrect_cpp.txt
+echo "Comparing C_++ C_py programs"
+comm -12 Correct_cpp.txt correct_output_py.txt
+echo "Comparing C_++ I_py programs"
+comm -12 Correct_cpp.txt incorrect_output_py.txt
+echo "Comparing I_++ I_py programs"
+comm -12 Incorrect_cpp.txt incorrect_output_py.txt
+echo "Comparing I_++ C_py programs"
+comm -12 Incorrect_cpp.txt correct_output_py.txt
+echo "Comparing pythons programs"
+comm -12 correct_output_py.txt incorrect_output_py.txt
+
